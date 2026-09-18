@@ -28,7 +28,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import profilePhoto from "@/assets/abdul-wahab-profile.png.asset.json";
+import profilePhoto from "@/assets/abdul-wahab-profile.png";
 import { certifications, personal, projects, skillGroups } from "@/data/portfolio";
 
 const navItems = ["home", "about", "skills", "projects", "experience", "education", "certifications", "contact"];
@@ -170,7 +170,7 @@ function Portfolio() {
               <div className="profile-window">
                 <div className="window-bar"><div><span /><span /><span /></div><code>profile.photo</code></div>
                 <div className="profile-frame">
-                  <img src={profilePhoto.url} width={830} height={787} alt="Portrait of Abdul Wahab" />
+                  <img src={profilePhoto} width={830} height={787} alt="Portrait of Abdul Wahab" />
                 </div>
                 <div className="profile-code" aria-hidden="true"><span>const</span> developer = <b>"Abdul Wahab"</b>;</div>
               </div>
